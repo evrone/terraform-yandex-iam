@@ -1,5 +1,5 @@
 variable "service_accounts" {
-  description = "A map of Yandex Cloud Service Accounts to create."
+  description = "Yandex Cloud Services Accounts map to create."
   type = map(object({
     description        = string
     folder_id          = string
