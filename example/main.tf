@@ -30,6 +30,6 @@ module "iam" {
     }
   }
 
-  pgp_key = data.local_file.pgp_key.content_base64
+  #pgp_key = data.local_file.pgp_key.content_base64
 
 }
