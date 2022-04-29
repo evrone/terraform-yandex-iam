@@ -1,5 +1,6 @@
 provider "yandex" {
-  token     = ""
+  token     = var.token
+  cloud_id  = var.yc_cloud_id
   zone      = "ru-central1-a"
 }
 
