@@ -16,6 +16,12 @@ output "service_accounts_names_ids" {
   }
 }
 
+output "service_accounts_names" {
+  value = [
+    for key, value in yandex_iam_service_account.service_accounts: key
+  ]
+}
+
 output "service_accounts_static_keys_encrypted" {
   value = {
     for k, v in yandex_iam_service_account_static_access_key.sa-static-key : k => v.encrypted_secret_key
@@ -26,4 +32,8 @@ output "service_accounts_static_keys_non_encrypted" {
   value = {
     for k, v in yandex_iam_service_account_static_access_key.sa-static-key : k => v.secret_key
   }
+}
+
+output "test" {
+  value = var.service_accounts
 }

@@ -1,6 +1,5 @@
 variable "service_accounts" {
   type = map(object({
-    name      = string
     role      = string
     folder_id = string
     create_static_keys = bool

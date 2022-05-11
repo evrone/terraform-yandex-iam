@@ -39,5 +39,4 @@ There is posibility to encrypt output static keys of service accounts with GPG k
 `echo -e "wcDMA/Xr4VdCf3d6AQwABEJLZmeErwifMsu2N34k/v1d77yZr9fbZTsir/++//mY8cK4gIJ7HvhIQIA" | base64 -d | gpg --decrypt`
 7. Here we are!
 
-Also there is no nessesary to use GPG and ecnryption - even if `pgp_key` varibale will be without any value (null), terraform will create plain text static_keys
-
+Also there is no nessesary to use GPG and encryption - even if `pgp_key` varibale will be without any value (null) or just commented in example/main.tf, terraform will create plain text static_keys
