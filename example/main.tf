@@ -17,19 +17,19 @@ module "iam" {
 
   service_accounts = {
     manager = {
-      name = "first"
+      description = "Service account to view folder"
       role = "viewer"
       folder_id = "b1ghrtqogtuu62mb1nr2"
       create_static_keys = true
     },
     admin = {
-      name = "second"
+      description = "Service account to manage folder"
       role = "editor"
       folder_id = "b1ghrtqogtuu62mb1nr2"
       create_static_keys = true
     }
   }
 
-  #pgp_key = data.local_file.pgp_key.content_base64
+  # pgp_key = data.local_file.pgp_key.content_base64
 
 }

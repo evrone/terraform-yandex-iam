@@ -13,12 +13,12 @@ variable "yc_cloud_id" {
 #   sensitive = true
 # }
 
-variable "service_accounts" {
-  description = "Yandex Cloud Services Accounts map to create."
-  type = map(object({
-    name      = string
-    role      = string
-    folder_id = string
-    create_static_keys = bool
-  }))
-}
+# variable "service_accounts" {
+#   description = "Yandex Cloud Services Accounts map to create."
+#   type = map(object({
+#     name      = string
+#     role      = string
+#     folder_id = string
+#     create_static_keys = bool
+#   }))
+# }

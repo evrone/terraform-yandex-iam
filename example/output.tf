@@ -14,6 +14,10 @@ output "service_accounts_names_ids" {
   sensitive = false
 }
 
+output "service_accounts_names" {
+  value = module.iam.service_accounts_names
+}
+
 output "service_accounts_static_keys_encrypted" {
   value = module.iam.service_accounts_static_keys_encrypted
 }
