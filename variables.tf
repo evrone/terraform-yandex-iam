@@ -1,16 +1,13 @@
 variable "service_accounts" {
-  description = "Yandex Cloud Services Accounts map to create."
   type = map(object({
-    description        = string
-    folder_id          = string
-    role               = string
+    role      = string
+    folder_id = string
     create_static_keys = bool
   }))
-  default = {}
 }
 
-variable "keys_encyption_pgp_key" {
-  type        = string
-  description = "(Optional) An optional PGP key to encrypt the resulting secret key material. May either be a base64-encoded public key or a keybase username in the form keybase:keybaseusername."
-  default     = null
+variable "pgp_key" {
+    type = string
+    description = "(Optional) An optional PGP key to encrypt the resulting secret key material. May either be a base64-encoded public key or a keybase username in the form keybase:keybaseusername."
+    default = null
 }
