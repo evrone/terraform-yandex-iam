@@ -4,7 +4,7 @@ output "service_accounts_id" {
 }
 
 output "service_accounts" {
-  value       = module.iam.service_accounts
+  value = module.iam.service_accounts
   sensitive = false
 }
 
