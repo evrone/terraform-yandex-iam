@@ -5,7 +5,6 @@ output "service_accounts_id" {
 
 output "service_accounts" {
   value       = module.iam.service_accounts
-  description = "Service accounts raw list"
   sensitive = false
 }
 
