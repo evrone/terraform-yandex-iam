@@ -2,6 +2,7 @@ resource "yandex_iam_service_account" "service_accounts" {
   for_each = var.service_accounts
 
   name = each.key
+  description = each.value["description"]
   folder_id = each.value["folder_id"]
 }
 

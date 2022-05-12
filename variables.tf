@@ -3,6 +3,7 @@ variable "service_accounts" {
     role      = string
     folder_id = string
     create_static_keys = bool
+    description = string
   }))
 }
 
