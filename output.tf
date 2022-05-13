@@ -21,7 +21,7 @@ output "service_accounts_names_ids" {
 
 output "service_accounts_names" {
   value = [
-    for key, value in yandex_iam_service_account.service_accounts: key
+    for key, value in yandex_iam_service_account.service_accounts : key
   ]
   description = "Service accounts name list"
 }
